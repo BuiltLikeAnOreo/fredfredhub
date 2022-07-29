@@ -1,0 +1,273 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("fredrick hub V.3.0.6", "Ocean")
+ 
+-- main
+local main = Window:NewTab("main")
+local mainSection = main:NewSection("Main")
+ 
+ 
+mainSection:NewToggle("Auto Trinket Pickup (risky)", "Pick up trinket then go back for it to work", function(state)
+        if state then
+            loadstring(game:HttpGet("https://pastebin.com/raw/E2i4yJrZ", true))()
+        else
+            loadstring(game:HttpGet("https://pastebin.com/raw/E2i4yJrZ", false))()
+        end
+end)
+ 
+ 
+mainSection:NewToggle("fly (Read Note)", "(C 2Fly Cant turn off)", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/iU1amDnf", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/iU1amDnf", false))()
+    end
+end)
+ 
+ 
+mainSection:NewToggle("nofall (Read Note)", "(CAUTION Once on cant turn off)", function(state)
+    if state then
+        loadstring(game:HttpGet("https://pastebin.com/raw/rGFWSeNd", true))()
+    else
+        loadstring(game:HttpGet("https://pastebin.com/raw/rGFWSeNd", false))()
+    end
+end)
+ 
+--ESP
+local ESP = Window:NewTab("ESP")
+local ESPSection = ESP:NewSection("ESP")
+ 
+ESPSection:NewToggle("just unNamed", "YEah", function(state)
+    if state then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua', true))()
+    else
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua', false))()
+    end
+end)
+ 
+ESPSection:NewButton("LeaderboardESP", "RightClick on their name to view.", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/21SA0uTb', true))()
+end)
+ 
+--RACE
+local Race = Window:NewTab("Race")
+local RaceSection = Race:NewSection("Races")
+ 
+RaceSection:NewButton("Dzin", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Dzin"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Vind", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Vind"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Fischeran", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Fischeran"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Dinakeri", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Dinakeri"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Morvid", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Morvid"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Navaran", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "LesserNavaran"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Azael", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Azael"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Metal scroom", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Metascroom"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Dullahan", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Dullahan"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Madrasian", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Madrasian"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Gaian", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Gaian"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Scroom", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Scroom"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Kasparan", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Kasparan"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Construct", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Construct"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Castellan", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Castellan"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Ashiin", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Ashiin"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Rigan", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Rigan"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+RaceSection:NewButton("Haseldan", "Talk to NPC, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Haselda"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+--NORP
+local Norp = Window:NewTab("Norp")
+local NorpSection = Norp:NewSection("Norp")
+ 
+NorpSection:NewButton("Norp Obelisk", "Talk to Obelisk, Don't press bye and click button.", function()
+    local args = {
+        [1] = {
+            ["choice"] = "Resonate"
+        }
+    }
+ 
+    game:GetService("ReplicatedStorage").Requests.Dialogue:FireServer(unpack(args))
+end)
+ 
+NorpSection:NewLabel("Make sure you are in the dialogue, DO NOT EXIT DIALOGUE")
+ 
+--Player
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+ 
+PlayerSection:NewButton("Reset (READ NOTE)", "Will kill you when in danger", function()
+    game.Players.LocalPlayer.Character:BreakJoints()
+end)
+ 
+PlayerSection:NewButton("Auto-regen bard meter", "Your bard meter will auto go up", function()
+    while wait(5) do
+        game.ReplicatedStorage.Requests.BardStreak:FireServer(40)
+    end
+end)
+PlayerSection:NewLabel("Spam auto-regen meter for better results")
+--Extra Scripts
+local Scripts = Window:NewTab("Extra Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts")
+ 
+ScriptsSection:NewButton("Infinite Yield", "Basic Roblox 'admin commands' script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+ 
+ScriptsSection:NewLabel("TIP use clicktp and gate same time to get to norp ob")
